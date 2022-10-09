@@ -1,5 +1,7 @@
 body {
   background-color: #202020;
   color: white;
-  background-color: red;
+}
+.label-color {
+  color: white;
 }
