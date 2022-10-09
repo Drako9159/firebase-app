@@ -9,15 +9,6 @@ import { getFirestore } from "https://www.gstatic.com/firebasejs/9.11.0/firebase
 //Utilidad para autenticar
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBqbGmd9junCvNZIaGVTXP-x7AwPdqTEok",
-  authDomain: "fir-app-df341.firebaseapp.com",
-  projectId: "fir-app-df341",
-  storageBucket: "fir-app-df341.appspot.com",
-  messagingSenderId: "709742168445",
-  appId: "1:709742168445:web:c4fc3f347885282a5ae414",
-  measurementId: "G-7Z7BD9FF9Q",
-};
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
