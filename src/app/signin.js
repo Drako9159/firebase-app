@@ -10,11 +10,18 @@ $signInForm.addEventListener("submit", async (e) => {
   try {
     const credentials = await signInWithEmailAndPassword(auth, email, password);
     console.log(credentials);
+    const modal = bootstrap.Modal.getInstance(
+      document.querySelector("#signin-modal")
+    );
+    modal.hide();
+    showMessage("Welcome " + credentials.user.email);
   } catch (error) {
     if (error.code === "auth/wrong-password") {
       showMessage("Wrong password", "error");
     } else if (error.code === "auth/user-not-found") {
       showMessage("User not found", "error");
+    } else {
+      showMessage(error.message, "error");
     }
   }
 });
